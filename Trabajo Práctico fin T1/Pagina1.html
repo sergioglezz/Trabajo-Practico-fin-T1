@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina 1</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="cabezera">
+                <br><br>
+                <h1>Creación de personaje</h1>
+                <h2>Elije el género</h2>
+                <div id="botones">
+                    <button class="boton" onclick="window.location.href='pagina1.html'"><h3>Masculino</h3></button>
+                    <button class="boton" onclick="window.location.href='pagina2.html'"><h3>Femenino</h3></button>
+                </div>
+            </div>
+            <div id="cuerpo">
+                <div id="opciones">
+                    <div id="bloque">
+                        <h2>Selecciona pantalones</h2>
+                        <button class="opciones" onclick="document.getElementById('pelo1').style.opacity=1;
+                        getElementById('pelo2').style.opacity=0;
+                        getElementById('pelo3').style.opacity=0;
+                        getElementById('pelo4').style.opacity=0;"><h2>1</h2></button>
+                        <button class="opciones" onclick="document.getElementById('pelo2').style.opacity=1;
+                        getElementById('pelo1').style.opacity=0;
+                        getElementById('pelo3').style.opacity=0;
+                        getElementById('pelo4').style.opacity=0;"><h2>2</h2></button>
+                        <button class="opciones" onclick="document.getElementById('pelo3').style.opacity=1
+                        getElementById('pelo1').style.opacity=0;
+                        getElementById('pelo2').style.opacity=0;
+                        getElementById('pelo4').style.opacity=0;"><h2>3</h2></button>
+                        <button class="opciones" onclick="document.getElementById('pelo4').style.opacity=1
+                        getElementById('pelo1').style.opacity=0;
+                        getElementById('pelo2').style.opacity=0;
+                        getElementById('pelo3').style.opacity=0;"><h2>4</h2></button>
+                    </div>
+                    <div id="bloque">
+                        <h2>Selecciona camiseta</h2>
+                        <button class="opciones" onclick="document.getElementById('camiseta1').style.opacity=1;
+                        getElementById('camiseta2').style.opacity=0;
+                        getElementById('camiseta3').style.opacity=0;"><h2>1</h2></button>
+                        <button class="opciones" onclick="document.getElementById('camiseta2').style.opacity=1;
+                        getElementById('camiseta1').style.opacity=0;
+                        getElementById('camiseta3').style.opacity=0;"><h2>2</h2></button>
+                        <button class="opciones" onclick="document.getElementById('camiseta3').style.opacity=1
+                        getElementById('camiseta1').style.opacity=0;
+                        getElementById('camiseta2').style.opacity=0;"><h2>3</h2></button>
+                    </div>
+                    <div id="bloque">
+                        <h2>Selecciona pantalones</h2>
+                        <button class="opciones" onclick="document.getElementById('Pantalones1').style.opacity=1;
+                        getElementById('Pantalones2').style.opacity=0;
+                        getElementById('Pantalones3').style.opacity=0;
+                        getElementById('Pantalones4').style.opacity=0;"><h2>1</h2></button>
+                        <button class="opciones" onclick="document.getElementById('Pantalones2').style.opacity=1;
+                        getElementById('Pantalones1').style.opacity=0;
+                        getElementById('Pantalones3').style.opacity=0;
+                        getElementById('Pantalones4').style.opacity=0;"><h2>2</h2></button>
+                        <button class="opciones" onclick="document.getElementById('Pantalones3').style.opacity=1
+                        getElementById('Pantalones1').style.opacity=0;
+                        getElementById('Pantalones2').style.opacity=0;
+                        getElementById('Pantalones4').style.opacity=0;"><h2>3</h2></button>
+                        <button class="opciones" onclick="document.getElementById('Pantalones4').style.opacity=1
+                        getElementById('Pantalones1').style.opacity=0;
+                        getElementById('Pantalones2').style.opacity=0;
+                        getElementById('Pantalones3').style.opacity=0;"><h2>4</h2></button>
+                    </div>
+                </div>
+                <div id="personaje">
+                    <br>
+                    <img class="personaje" src="avatarM.png" alt="Masculino"/>
+                    <img class="opcionesImagen" src="Pantalones1.png" id="Pantalones1"/>
+                    <img class="opcionesImagen" src="Pantalones2.png" id="Pantalones2"/>
+                    <img class="opcionesImagen" src="Pantalones3.png" id="Pantalones3"/>
+                    <img class="opcionesImagen" src="Pantalones4.png" id="Pantalones4"/>
+                    <img class="opcionesImagen" src="camiseta1.png" id="camiseta1"/>
+                    <img class="opcionesImagen" src="camiseta2.png" id="camiseta2"/>
+                    <img class="opcionesImagen" src="camiseta3.png" id="camiseta3"/>
+                    <img class="opcionesImagen" src="pelo1M.png" id="pelo1"/>
+                    <img class="opcionesImagen" src="pelo2M.png" id="pelo2"/>
+                    <img class="opcionesImagen" src="pelo3M.png" id="pelo3"/>
+                    <img class="opcionesImagen" src="pelo4M.png" id="pelo4"/>
+
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url("Fondo2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#main{
+    margin: 0 auto;
+    width: 140vh;
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+}
+
+#cabezera{
+    height: 50vh;
+    background-image: url("banner.png");
+    background-size: cover;
+    border-bottom: 1vh solid black;
+    justify-content: space-around;
+}
+
+#botones{
+    display: flex;
+    width: 110vh;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 4vh;
+    color: cornflowerblue;
+    -webkit-text-stroke: 1px black;
+    font-weight: bold;
+    font-family: Impact;
+}
+
+.boton{
+    margin: 0 auto;
+    border-radius: 10px; 
+    box-shadow: 5px 5px 5px grey;
+    width: 30vh;
+    height: 15vh;
+    background-color: cornflowerblue;
+}
+
+button h3{
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 25px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+button:hover{
+    background-color: darkblue;
+}
+
+#cuerpo{
+    height: 75vh;
+}
+
+#personaje{
+    margin-top: 2vh;
+    float: right;
+    height: 75vh;
+    width: 40vh;
+    display: flex;
+
+}
+
+img.personaje{
+    width: 30vh;
+    border: 1vh solid black;
+    border-radius: 15%; 
+    position: absolute;
+}
+
+img.opcionesImagen{
+    width: 30vh;
+    border: 1vh solid transparent;
+    position: absolute;
+    opacity:0;
+}
+
+#opciones {
+    float: left;
+    width: 100vh;
+}
+
+button.opciones {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 15%; 
+}
+
+.opciones:hover {
+    background-color: #999;
+}
+
+.opciones:active{
+    transform: translateY(2px);
+}
+
+#bloque {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vh;
+}
