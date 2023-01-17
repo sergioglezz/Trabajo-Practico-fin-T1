@@ -7,8 +7,18 @@
 			</head>
 			<body>
 				<h2>Canción:</h2>
-				<h1><xsl:value-of select="cancion/datos/titulo"></xsl:value-of></h1>
-				<p>(Autor: <xsl:value-of select="cancion/datos/autor"></xsl:value-of>)</p>
+				<h1><xsl:value-of select="cancion/datos/titulo"/></h1>
+				<p>(Autor: <xsl:value-of select="cancion/datos/autor"/>)</p>
+				<p>(Fecha de lanzamiento: <xsl:value-of select="cancion/datos/fecha"/>)</p>
+				<p>(Álbum: <xsl:value-of select="cancion/datos/album"/>)</p>
+				<p>(Género: <xsl:value-of select="cancion/datos/genero"/>)</p>
+				
+				<xsl:for-each select="cancion/letra/estrofa">
+					<xsl:for-each select="verso">
+						<p><xsl:value-of select="."/></p>
+					</xsl:for-each>
+					<br/>
+				</xsl:for-each>
 			</body>
 		</html>
 	</xsl:template>
