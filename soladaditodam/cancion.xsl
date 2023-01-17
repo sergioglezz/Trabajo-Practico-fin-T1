@@ -14,6 +14,7 @@
 				<h3>(Género: <xsl:value-of select="cancion/datos/genero"/>)</h3>
 				
 				<xsl:for-each select="cancion/letra/estrofa">
+					<xsl:sort select="orden"/>
 					<xsl:for-each select="verso">
 						<p><xsl:value-of select="."/></p>
 					</xsl:for-each>
